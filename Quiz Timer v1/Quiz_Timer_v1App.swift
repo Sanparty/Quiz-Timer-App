@@ -11,7 +11,7 @@ import SwiftUI
 struct Quiz_Timer_v1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EntryView()
         }
     }
 }

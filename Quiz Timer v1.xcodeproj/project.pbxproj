@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE10E30C29C8F7AB00C62AF3 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE10E30B29C8F7AB00C62AF3 /* TimerView.swift */; };
 		DE8AC2D72996F75B00CF0E2A /* Quiz_Timer_v1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8AC2D62996F75B00CF0E2A /* Quiz_Timer_v1App.swift */; };
 		DE8AC2D92996F75B00CF0E2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8AC2D82996F75B00CF0E2A /* ContentView.swift */; };
 		DE8AC2DB2996F75C00CF0E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8AC2DA2996F75C00CF0E2A /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE10E30B29C8F7AB00C62AF3 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		DE8AC2D32996F75B00CF0E2A /* Quiz Timer v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Timer v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8AC2D62996F75B00CF0E2A /* Quiz_Timer_v1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_Timer_v1App.swift; sourceTree = "<group>"; };
 		DE8AC2D82996F75B00CF0E2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				DE8AC2D62996F75B00CF0E2A /* Quiz_Timer_v1App.swift */,
 				DE8AC2D82996F75B00CF0E2A /* ContentView.swift */,
+				DE10E30B29C8F7AB00C62AF3 /* TimerView.swift */,
 				DE8AC2DA2996F75C00CF0E2A /* Assets.xcassets */,
 				DE8AC2DC2996F75C00CF0E2A /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE10E30C29C8F7AB00C62AF3 /* TimerView.swift in Sources */,
 				DE8AC2D92996F75B00CF0E2A /* ContentView.swift in Sources */,
 				DE8AC2D72996F75B00CF0E2A /* Quiz_Timer_v1App.swift in Sources */,
 			);
