@@ -16,6 +16,7 @@ struct TimerView: View {
     
     @State var timeRemaining: Int
     @State var timeQuestion: String
+
     
     let timer = Timer.publish(every: 1, on: .main, in: .common)
     
@@ -32,6 +33,8 @@ struct TimerView: View {
         let timeremainingperquestion: String = "remaining time per question"
         
         VStack {
+            timerStartShape().frame(width: 100, height: 100)
+                .padding()
             if ( questions > 0 && timeRemaining > 0 ) {
                 Text("Good Luck!")
                     .font(.largeTitle)
@@ -50,7 +53,7 @@ struct TimerView: View {
                         timeQuestion = convertSecondsToTime(timeInSeconds: timeRemaining/questions)
                     }
                     .font(.title2)
-            } else if ( timeRemaining == 0 ){
+            } else if ( timeRemaining <= 0 ){
                 Text("Time is up!")
                     .font(.largeTitle)
             }
@@ -81,11 +84,11 @@ struct TimerView: View {
                     .font(.title2)
                     .multilineTextAlignment(.center)
                     .padding(5)
-                
-                Text("\(questions) questions left")
-                    .font(.title2)
             }
-            if (questions > 0  && isRunning) {
+            Text("\(questions) questions left")
+                .font(.title2)
+                .padding()
+            if (questions > 0  && timeRemaining > 0 && isRunning) {
                 Button(action:{
                     questions -= 1
                     
